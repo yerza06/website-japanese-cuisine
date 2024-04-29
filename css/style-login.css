@@ -1,0 +1,206 @@
+:root {
+    --Orange: #ff851b;
+    --Black: #000;
+    --Gray: #111111;
+}
+
+::-webkit-scrollbar {
+    /* display: none; */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--Black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--Orange);
+    border-radius: 5px;
+    /* color: rgba(255, 0, 0, 0.536); */
+}
+
+@font-face {
+    font-family: Fregat;
+    src: url(/fonts/Fregat/Fregat_regular.otf);
+}
+
+@font-face {
+    font-family: PeridotDemoPE;
+    src: url(/fonts/PeridotDemoPE/PeridotDemoPE-Light.otf);
+}
+
+@font-face {
+    font-family: Weekend;
+    src: url(/fonts/the_weekend/the_weekend.otf);
+}
+
+body {
+    background: var(--Gray);
+    margin: 0;
+}
+
+h3 {
+    color: var(--Orange);
+    font-family: Weekend;
+    font-size: 550%;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    /* align-content: center; */
+    align-items: center;
+    /* height: 70px; */
+    width: auto;
+    padding: 1% 0;
+    border-bottom: var(--Orange) solid 2px;
+    position: relative;
+    margin: 0 2%;
+}
+
+.link-logo {
+    text-decoration: none;
+    /* width: auto; */
+}
+
+.link-logo > .logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.link-logo > .logo > img {
+    /* width: 20%; */
+    width: 60px;
+    margin: 0 10px 0 0;
+}
+
+.link-logo > .logo > p {
+    height: 20px;
+    font-size: 160%;
+    font-family: Weekend;
+    color: var(--Orange);
+}
+
+#button-signin {
+    font-family: Fregat;
+    font-size: 120%;
+    padding: 8px 15px;
+    border-radius: 5px;
+    height: 80%;
+    cursor: pointer;
+    text-decoration: none;
+    /* margin: 0 1%; */
+    background: var(--Orange);
+    border: var(--Gray) solid 2px;
+    color: var(--Gray);
+    margin: 0 3px 0 1%;
+    transition: 0.2s;
+}
+
+#button-signin:hover {
+    background: #a25511;
+}
+
+.wrapper-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6em;
+}
+
+.conteiner-login {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 2px solid var(--Orange);
+    border-radius: 5px;
+    width: 30%;
+    background: var(--Black);
+}
+
+.conteiner-login > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.conteiner-login > form > img {
+    width: 10rem;
+}
+
+.conteiner-login > form > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    /* padding: 0 10px; */
+}
+
+.conteiner-login > form input {
+    font-family: Fregat;
+    color: #ffffff;
+    font-size: 1.2em;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+    margin: 4% 0 0 0;
+}
+
+/* .conteiner-login > form input:focus,
+.conteiner-login > form input:valid {
+    color: #ff851b;
+    border: 2px solid var(--Orange);
+} */
+
+.conteiner-login > form input:focus {
+    color: #ff851b;
+    border: 4px solid var(--Orange);
+}
+
+button {
+    font-family: Fregat;
+    font-size: 1.2em;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--Orange);
+    color: #000;
+    border: 0;
+    margin: 2% 0 0 0;
+}
+
+button:hover {
+    cursor: pointer;
+    /* background: var(--Orange); */
+    background: rgba(255, 133, 27, 0.7);
+}
+
+#message-errors {
+    font-family: Fregat;
+    font-size: 120%;
+    color: red
+}
+
+@media (max-width: 600px) {
+    .conteiner-login {
+        width: 100%;
+    }
+
+    .wrapper-login {
+        padding: 6em 2em;
+    }
+}

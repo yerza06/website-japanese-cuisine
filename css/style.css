@@ -1,0 +1,583 @@
+:root {
+    --Orange: #ff851b;
+    --Black: #000;
+    --Gray: #111111;
+}
+
+::-webkit-scrollbar {
+    /* display: none; */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--Black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--Orange);
+    border-radius: 5px;
+    /* color: rgba(255, 0, 0, 0.536); */
+}
+
+@font-face {
+    font-family: Fregat;
+    src: url(/fonts/Fregat/Fregat_regular.otf);
+}
+
+@font-face {
+    font-family: PeridotDemoPE;
+    src: url(/fonts/PeridotDemoPE/PeridotDemoPE-Light.otf);
+}
+
+@font-face {
+    font-family: Weekend;
+    src: url(/fonts/the_weekend/the_weekend.otf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(/fonts/Abel/Abel-Regular.ttf);
+}
+
+body {
+    background: var(--Gray);
+    margin: 0;
+}
+
+h2 {
+    color: var(--Orange);
+    font-family: Weekend;
+    font-size: 580%;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    position: static;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    /* height: 70px; */
+    width: auto;
+    padding: 1% 0;
+    border-bottom: var(--Orange) solid 2px;
+    position: relative;
+    margin: 0 2%;
+}
+
+header > .nav-link {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 15%;
+}
+
+header > .nav-link > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header > .nav-link > ul > li {
+    list-style: none;
+}
+
+header > .nav-link > ul > li > a {
+    font-family: Fregat;
+    font-size: 130%;
+    color: var(--Orange);
+    text-decoration: none;
+}
+
+.link-logo {
+    text-decoration: none;
+    /* width: auto; */
+}
+
+.link-logo > .logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.link-logo > .logo > img {
+    /* width: 20%; */
+    width: 60px;
+    margin: 0 10px 0 0;
+}
+
+.link-logo > .logo > p {
+    height: 20px;
+    font-size: 160%;
+    font-family: Weekend;
+    color: var(--Orange);
+}
+
+.button-login-signin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    /* width: 50%; */
+    /* margin-right: 2%; */
+}
+
+.button-login-signin a {
+    font-family: Fregat;
+    font-size: 120%;
+    padding: 8px 15px;
+    border-radius: 5px;
+    height: 80%;
+    cursor: pointer;
+    /* margin: 0 1%; */
+    text-decoration: none;
+}
+
+#button-login {
+    background: rgba(0, 0, 0, 0);
+    border: var(--Orange) solid 2px;
+    color: var(--Orange);
+    margin: 0 1% 0 0;
+    transition: 0.2s;
+}
+
+#button-signin {
+    background: var(--Orange);
+    border: var(--Gray) solid 2px;
+    color: var(--Gray);
+    margin: 0 3px 0 1%;
+    transition: 0.2s;
+}
+
+#button-login:hover {
+    color: var(--Black);
+    background: var(--Orange);
+}
+
+#button-signin:hover {
+    background: #a25511;
+}
+
+main {
+    margin: 0 0%;
+    background-image: linear-gradient(90deg, #00000085, #0000004a),
+        url(/images/background-image.jpg);
+    background-size: cover;
+    backdrop-filter: blur(30px);
+    height: 200%;
+}
+
+main > .wrapper {
+    padding: 20% 2%;
+}
+
+main > .wrapper > .title {
+    display: flex;
+    /* margin: 24% 0 0 0; */
+}
+
+main > .wrapper > .title > img {
+    width: 13%;
+}
+
+main > .wrapper > .title > .title-text > h1 {
+    color: var(--Orange);
+    font-family: Weekend;
+    font-size: 800%;
+    font-weight: 300;
+    margin: 0;
+}
+
+main > .wrapper > .title > .title-text > h3 {
+    color: #fff;
+    font-family: Fregat;
+    font-size: 400%;
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+    color: #fff;
+    font-family: Fregat;
+    font-size: 120%;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+
+#p-text {
+    width: 30%;
+    margin: 2% 0 0 0;
+}
+
+.banner-wrapper-1 {
+    background: var(--Gray);
+    padding: 20px 0;
+    border-top: var(--Orange) solid 3px;
+    border-bottom: var(--Orange) solid 3px;
+}
+
+.apps-banner-text {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.app-text {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 1%;
+    /* animation-duration: 10s; */
+}
+
+.app-text > .banner-text {
+    font-family: Weekend;
+    font-size: 200%;
+    color: var(--Orange);
+    margin: 0%;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: animation;
+    animation-timing-function: linear;
+    float: left;
+}
+
+.wrapper-discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 15%;
+}
+
+/* .wrapper-discount > h2 {
+    color: var(--Orange);
+    font-family: Weekend;
+    font-size: 580%;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    margin: 10% 0 0 0;
+}  */
+
+.content-discount {
+    margin: 3% 0 0 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background: var(--Orange);
+    border: #ec6320 solid 7px;
+    border-bottom: #ec6320 solid 0.7em;
+    border-radius: 15px;
+}
+
+.content-discount > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-content: space-between; */
+}
+
+.content-discount h3 {
+    font-family: Fregat;
+    font-weight: 900;
+    font-size: 5em;
+    margin: 0;
+    color: #000;
+    /* width: 0.8em; */
+}
+
+.content-discount button {
+    font-family: Fregat;
+    font-size: large;
+    color: #fff;
+    background: var(--Gray);
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 30px;
+    width: 25%;
+    cursor: pointer;
+}
+
+#text-discount {
+    /* width: 70%; */
+    color: #000;
+}
+
+.banner-wrapper-2 {
+    width: 100%;
+    padding: 1em 0;
+    background: var(--Orange);
+}
+
+.banner-wrapper-2 > .icons-banner > img {
+    width: 3%;
+}
+
+.banner-wrapper-2 > .icons-banner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner-wrapper-2 > .icons-banner > .banner-logo-2 {
+    transform: rotate(180deg);
+}
+
+/* =============================================================== */
+
+.wrapper-catalog {
+    padding: 10% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-catalog > .catalog-nav-link {
+    width: 70%;
+    margin: 2% 0;
+}
+
+.wrapper-catalog > .catalog-nav-link > #catalog-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border: var(--Orange) solid 2px;
+    border-radius: 5em;
+}
+
+.wrapper-catalog > .catalog-nav-link > #catalog-link a {
+    font-family: Fregat;
+    font-size: 130%;
+    color: var(--Orange);
+    text-decoration: none;
+}
+
+.catalog__food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.catalog__food > h3 {
+    font-family: Weekend;
+    color: var(--Orange);
+    font-size: 350%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.list__foods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards__food {
+    background: var(--Black);
+    width: 280px;
+    width: min(18%, 280px);
+    height: auto;
+    border-radius: 10px;
+    padding: 1.8em;
+    display: grid;
+    margin-bottom: 5%;
+    /* grid-template-rows: repeat(); */
+}
+
+.food__image {
+    width: 100%;
+}
+
+.title__food {
+    font-family: Weekend;
+    font-size: 320%;
+    color: var(--Orange);
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.food__caption {
+    font-family: Fregat;
+    color: #fff;
+    font-size: 130%;
+    margin: 20px 0;
+}
+
+.price__cant {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    align-items: stretch;
+}
+
+.food__price {
+    font-family: Inter;
+    color: #fff;
+    font-size: 200%;
+    margin: 0;
+}
+
+.button__cant {
+    background: var(--Orange);
+    border-radius: 5px;
+    border: 0;
+    width: 15%; 
+    height: auto;
+    display: flex;
+    align-self: stretch;
+    padding: 0 2.3%;
+}
+
+/* =============================================================== */
+
+.wrapper-order {
+    padding: 10% 2%;
+}
+
+.wrapper-order > #order-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 12%;
+}
+
+.wrapper-order > #order-info > ol > li {
+    color: #fff;
+    font-family: Fregat;
+    font-size: 120%;
+    letter-spacing: 1px;
+    width: 70%;
+    margin: 0 0 2% 0;
+}
+
+.wrapper-order > #order-info > img {
+    height: 50.2ex;
+    width: auto;
+}
+
+/* =============================================================== */
+
+.wrapper-advertisement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20%;
+    margin: 0 0 10% 0;
+}
+
+.banner-yokohama {
+    display: flex;
+    background: var(--Orange);
+    margin: 7% 0;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.banner-image {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.banner-text {
+    font-family: Fregat;
+    font-size: 120%;
+    line-height: 130%;
+    color: var(--Black);
+    /* text-align: center; */
+    height: auto;
+    align-self: center;
+}
+
+/* =============================================================== */
+
+footer {
+    background: var(--Black);
+
+    padding: 6% 2% 0;
+}
+
+footer > .wrapper > .title {
+    display: flex;
+    /* margin: 24% 0 0 0; */
+}
+
+footer > .wrapper > .title > img {
+    width: 13%;
+}
+
+footer > .wrapper > .title > .title-text > h1 {
+    color: var(--Orange);
+    font-family: Weekend;
+    font-size: 800%;
+    font-weight: 300;
+    margin: 0;
+}
+
+footer > .wrapper > .title > .title-text > h3 {
+    color: #fff;
+    font-family: Fregat;
+    font-size: 400%;
+    font-weight: 300;
+    margin: 0;
+}
+
+footer > .nav-link {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: 3% 0;
+}
+
+footer > .nav-link > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer > .nav-link > ul > li {
+    list-style: none;
+}
+
+footer > .nav-link > ul > li > a {
+    font-family: Fregat;
+    font-size: 130%;
+    color: var(--Orange);
+    text-decoration: none;
+}
+
+#text-footer {
+    font-family: Fregat;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#footer-hr {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+}
+
+#text-from {
+    font-family: Abel;
+    font-size: 90%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+    padding: 0.4% 0;
+}
